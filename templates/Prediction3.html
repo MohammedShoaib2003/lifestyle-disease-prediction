@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Life Style Deases | Liver Disease | Prediction</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/liverpat/assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/liverpat/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/static/liverpat/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/liverpat/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/liverpat/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/liverpat/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/liverpat/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/liverpat/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/liverpat/assets/css/style.css" rel="stylesheet">
+
+  
+
+  <style>
+    /* body {
+    text-align: center;
+    background-color: #639a67;
+}
+
+header {
+    font-family: 'Ultra', serif;
+    padding-top: 40;
+    padding-bottom: 40;
+    background-color: #2b580c;
+    color: #d8ebb5;
+} */
+
+.btn {
+    background-color: #323232;
+}
+
+
+input {
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 35%;
+    background-color: white;
+    width: 300px;
+}
+
+/* @media screen and (max-width: 500px) {
+    input {
+        width: 100%;
+    }
+} */
+.gpb
+{
+  display: flex;
+  margin-left: 250px;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="/index"><span>Life Style Deases</span></a></h1>
+        
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="/home3">Home</a></li>
+          <li><a href="/Dataset3">DataSet</a></li>
+          <li><a href="/Prediction3">Prediction</a>
+          </li>
+          <li><a href="/DataAnalytics3">Data
+              Analytics</a></li>
+          <li><a href="/Model3">Model Accuracy</a>
+          </li>
+        </ul>
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Our Team Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Prediction</h2>
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+    <div class="container">
+      <form action="/predict1" method="POST">
+
+        <div class="gpb">
+          <div class="ypb">
+         
+          <input type="text" name="Age" placeholder="Age" required="required">
+          <br>
+          <input type="text" name="Total_Bilirubin" placeholder="Total_Bilirubin" required="required">
+          <br>
+          <input type="text" name="Direct_Bilirubin" placeholder="Direct_Bilirubin" required="required">
+          <br>
+          <input type="text" name="Alkaline_Phosphotase" placeholder="Alkaline_Phosphotase" required="required">
+          <br>
+          <input type="text" name="Alamine_Aminotransferase" placeholder="Alamine_Aminotransferase" required="required">
+          <br>
+        </div>
+        <div class="spb" style="margin-left:50px ;">
+          <input type="text" name="Aspartate_Aminotransferase" placeholder="Aspartate_Aminotransferase" required="required">
+          <br>
+          <input type="text" name="Total_Protiens" placeholder="Total_Protiens" required="required">
+          <br>
+          <input type="text" name="Albumin" placeholder="Albumin" required="required">
+          <br>
+
+          <input type="text" name="Albumin_and_Globulin_Ratio" placeholder="Albumin_and_Globulin_Ratio" required="required">
+          <br>
+
+        </div>
+      </div>
+        
+          <button type="submit" class="btn btn-outline-warning" style="margin-left: 580px;">Predict</button>
+
+
+      </form>
+
+      <br>
+      <br>
+
+      <h3 style="margin-left: 300px;"><strong>{{ prediction_text }}</strong></h3>
+ 
+          <div><a href="https://healthnomic26.herokuapp.com/" class="icon-link">          
+      
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+    <!-- ======= Team Section ======= -->
+    <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/liverpat/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Data Collection:</h4>
+                <p>The first step is to gather data. This includes medical records, lab test results (such as liver
+                  function tests, imaging studies like ultrasound or MRI), patient demographics, and any other relevant
+                  information.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/liverpat/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Data Preprocessing:</h4>
+                <p>Raw medical data often contains noise, missing values, and inconsistencies. Data
+                  preprocessing involves cleaning the data, handling missing values (imputation), and normalizing or
+                  standardizing features to ensure that the ML model can learn effectively from the data.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/liverpat/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Feature Selection/Extraction:</h4>
+                <p>In medical datasets, there may be many features, but not all of them
+                  may be relevant for predicting liver disease. Feature selection techniques help in identifying the
+                  most important features or extracting new features that are most informative for the task.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/liverpat/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Model Selection:</h4>
+                <p>There are various ML algorithms that can be used for diagnosing liver disease,
+                  including decision trees, random forests, support vector machines, logistic regression, and neural
+                  networks. The choice of algorithm depends on factors such as the size and nature of the dataset,
+                  interpretability requirements, and computational resources available.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/liverpat/assets/img/team/team-5.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Model Training:</h4>
+                <p>The selected ML model is trained on the preprocessed data. During training, the model
+                  learns the patterns and relationships between the input features and the target variable (i.e.,
+                  whether the patient has liver disease or not).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/liverpat/assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Model Evaluation:</h4>
+                <p>After training, the performance of the ML model is evaluated using validation data
+                  or through cross-validation techniques. Common evaluation metrics for binary classification tasks like
+                  diagnosing liver disease include accuracy, precision, recall, F1 score, and area under the receiver
+                  operating characteristic curve (AUC-ROC).</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+ 
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/liverpat/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/liverpat/assets/vendor/aos/aos.js"></script>
+  <script src="/static/liverpat/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/liverpat/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/liverpat/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/liverpat/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/liverpat/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/liverpat/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/liverpat/assets/js/main.js"></script>
+
+</body>
+
+</html>

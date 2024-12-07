@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Life Style Deases | Chronic Kidney Disease | Prediction</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/static/chronicpat/assets/img/favicon.png" rel="icon">
+  <link href="/static/chronicpat/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/chronicpat/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/static/chronicpat/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/chronicpat/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/chronicpat/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/chronicpat/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/chronicpat/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/chronicpat/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/chronicpat/assets/css/style.css" rel="stylesheet">
+
+  
+  
+   
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Ultra&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- css -->
+   
+          
+    
+
+
+  
+    <style>
+     
+/* header {
+    font-family: 'Ultra', serif;
+    padding-top: 40;
+    padding-bottom: 40;
+    background-color: white;
+    color: #d8ebb5;
+} */
+
+.btn {
+    background-color: #323232;
+}
+
+
+input {
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 35%;
+    background-color: white;
+    width: 300px;
+}
+
+/* @media screen and (max-width: 500px) {
+    input {
+        width: 100%;
+    }
+} */
+.gpb
+{
+  display: flex;
+  margin-left: 250px;
+}
+
+    </style>
+</head>
+
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="/index"><span>🧬𝕝𝕚𝕗𝕖 𝕤𝕥𝕪𝕝𝕖 𝕕𝕖𝕒𝕤𝕖𝕤</span></a></h1>
+        
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="/home2">Home</a></li>
+          <li><a href="/Dataset2">DataSet</a></li>
+          <li><a href="/Prediction2">Prediction</a></li>
+          <li><a href="/DataAnalytics2">Data Analytics</a></li>
+          <li><a href="/Model2">Model Accuracy</a></li>
+        </ul>
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+  
+
+
+
+
+   
+
+
+  <main id="main">
+
+    <!-- ======= Our Team Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Prediction</h2>
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+ 
+  <br>
+
+  <div class="container">
+      <form action="/predict" method="POST">
+
+
+      <div class="gpb">
+        <div class="ypb">
+          <input type="text" name="Blood_Pressure " placeholder="Blood_Pressure" required="required">
+          <br>
+          <input type="text" name="Specific_Gravity" placeholder="Specific_Gravity" required="required">
+          <br>
+          <input type="text" name="Albumin" placeholder="Albumin" required="required">
+          <br>
+          <input type="text" name="Sugar" placeholder="Sugar" required="required">
+          <br>
+          <input type="text" name="Red_Blood_Cell" placeholder="Red_Blood_Cell" required="required">
+          <br>
+          <input type="text" name="Blood_Urea" placeholder="Blood_Urea" required="required">
+          <br>
+          <input type="text" name="Serum_Creatinine" placeholder="Serum_Creatinine" required="required">
+          <br>
+        </div>
+        <div class="spb" style="margin-left:50px ;">
+          <input type="text" name="Sodium" placeholder="Sodium" required="required">
+          <br>
+
+          <input type="text" name="Pottasium" placeholder="Pottasium" required="required">
+          <br>
+
+          <input type="text" name="Hemoglobin" placeholder="Hemoglobin" required="required">
+          <br>
+       
+        
+          <input type="text" name="White_Blood_Cell_Count" placeholder="White_Blood_Cell_Count" required="required">
+          <br>
+
+          <input type="text" name="Red_Blood_Cell_Count" placeholder="Red_Blood_Cell_Count" required="required">
+          <br>
+
+          <input type="text" name="Hypertension" placeholder="Hypertension" required="required" style="ma">
+          <br>
+          
+        </div>
+      </div>
+      
+    <button type="submit" class="btn btn-outline-warning" style="margin-left: 580px;">Predict</button>
+       </form>
+   
+      <br>
+      <br>
+
+      <h1 style="margin-left: 300px;"><strong>{{ prediction_text }}</strong></h1>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+
+
+    <!-- ======= Team Section ======= -->
+    <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/chronicpat/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Data Collection:</h4>
+                <p>Gathering relevant medical data is crucial. This includes patient demographics, clinical history,
+                  laboratory test results (e.g., serum creatinine levels, urine albumin levels), imaging data (if
+                  available), and any other pertinent information related to CKD diagnosis and progression.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/chronicpat/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <p>✔️Cleaning the data to handle missing values, outliers, and inconsistencies.<br>
+                  ✔️Feature engineering to extract meaningful features from raw data, such as calculating estimated
+                  glomerular filtration rate (eGFR) from serum creatinine levels.<br>
+                  ✔️Normalization or scaling of features to ensure that all features contribute equally to the model
+                  fitting process.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/chronicpat/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Feature Selection:</h4>
+                <p>
+                  Identifying the most relevant features for CKD prediction using techniques like correlation analysis,
+                  feature importance ranking, or domain knowledge.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/chronicpat/assets/img/team/team-4.jpg" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info">
+                <h4>Model Selection:</h4>
+                <p>
+                  Choosing appropriate machine learning algorithms for CKD prediction. Common choices include:<br>
+                  ✔️Logistic Regression.<br>
+                  ✔️Decision Trees.<br>
+                  ✔️Random Forests.<br>
+                  ✔️Support Vector Machines (SVM).<br>
+                  ✔️Gradient Boosting Machines (e.g., XGBoost, LightGBM).<br>
+                  ✔️Neural Networks (e.g., deep learning models).<br></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/chronicpat/assets/img/team/team-5.jpg" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info">
+                <h4>Model Training:</h4>
+                <p>✔️Splitting the dataset into training, validation, and test sets.<br>
+                  ✔️Training the selected ML models on the training data.<br>
+                  ✔️Fine-tuning hyperparameters to optimize model performance using techniques like grid search or
+                  random
+                  search.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/chronicpat/assets/img/team/team-6.jpg" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info">
+                <h4>Model Evaluation:</h4>
+                <p>✔️Assessing model performance using appropriate evaluation metrics such as accuracy, precision,
+                  recall,
+                  F1-score, ROC-AUC, etc.
+                  ✔️Utilizing techniques like cross-validation to obtain more robust estimates of model performance.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/chronicpat/assets/img/team/team-7.jpg" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info">
+                <h4>Interpretability:</h4>
+                <p>Understanding the factors driving model predictions, especially in a medical context, is crucial.
+                  Techniques like SHAP (SHapley Additive exPlanations) or LIME (Local Interpretable Model-agnostic
+                  Explanations) can be employed for model interpretability.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="/static/chronicpat/assets/img/team/team-8.jpg" class="img-fluid" alt="">
+
+              </div>
+              <div class="member-info">
+                <h4>Deployment:</h4>
+                <p>✔️Integrating the trained model into a software system or application for real-world use. This could
+                  involve building a user interface for clinicians to input patient data and receive CKD risk
+                  predictions.<br>
+                  ✔️Ensuring compliance with regulatory requirements and ethical considerations in handling patient
+                  data.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+    
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Life Style Deases</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by XYZ
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/chronicpat/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/chronicpat/assets/vendor/aos/aos.js"></script>
+  <script src="/static/chronicpat/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/chronicpat/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/chronicpat/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/chronicpat/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/chronicpat/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/static/chronicpat/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/chronicpat/assets/js/main.js"></script>
+
+</body>
+
+</html>

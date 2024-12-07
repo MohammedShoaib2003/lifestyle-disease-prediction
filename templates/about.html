@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LIFE STYLE DISEASE</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="/index">LSDPUML</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">LSDPUML</span>
+          <i class='bx bx-x'></i>
+        </div>
+        <ul class="links">
+          <li><a href="/index">HOME</a></li>
+          <li><a href="/about">About Us </a></li>
+          <li>
+            <a href="#">Life StyleDisease</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li class="more">
+                <span><a href="/home2">1.Chronic
+                    Kidney Disease</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+               
+              </li>
+              <li class="more">
+                <span><a href="/home3">2.Liver
+                    disease</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+               
+              </li>
+              <li class="more">
+                <span><a href="/home1">3.Cardio
+                    vascular disease</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+               
+              </li>
+            </ul>
+          </li>
+          <li><a href="/models">Models</a></li>
+          <li><a href="/contact">Contact us</a></li>
+          <!-- <li><a href="/login">login</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    // search-box open close js code
+    let navbar = document.querySelector(".navbar");
+    let searchBox = document.querySelector(".search-box .bx-search");
+    // let searchBoxCancel = document.querySelector(".search-box .bx-x");
+
+    searchBox.addEventListener("click", () => {
+      navbar.classList.toggle("showInput");
+      if (navbar.classList.contains("showInput")) {
+        searchBox.classList.replace("bx-search", "bx-x");
+      } else {
+        searchBox.classList.replace("bx-x", "bx-search");
+      }
+    });
+
+    // sidebar open close js code
+    let navLinks = document.querySelector(".nav-links");
+    let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+    let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+    menuOpenBtn.onclick = function () {
+      navLinks.style.left = "0";
+    }
+    menuCloseBtn.onclick = function () {
+      navLinks.style.left = "-100%";
+    }
+
+
+    // sidebar submenu open close js code
+    let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+    htmlcssArrow.onclick = function () {
+      navLinks.classList.toggle("show1");
+    }
+    let moreArrow = document.querySelector(".more-arrow");
+    moreArrow.onclick = function () {
+      navLinks.classList.toggle("show2");
+    }
+    let jsArrow = document.querySelector(".js-arrow");
+    jsArrow.onclick = function () {
+      navLinks.classList.toggle("show3");
+    }
+  </script>
+
+  <style>
+    #hamBurger {
+      display: none;
+    }
+
+    .button {
+      padding: 7px 10px;
+      color: #fff;
+      animation: none;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      background-color: rgb(32, 154, 202);
+    }
+
+    #home {
+      width: 100%;
+      padding: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .home-left {
+      height: 300px;
+      position: relative;
+    }
+
+    .home-left img {
+      height: 100%;
+      border-radius: 20px;
+      margin: 50px;
+
+    }
+
+    .home-right {
+      width: 50%;
+    }
+
+    .home-heading {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .home-para {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      position: relative;
+      width: 0;
+    }
+
+    .btn:hover::after {
+      content: '';
+      height: 4px;
+      position: absolute;
+      background-color: aqua;
+      left: 0;
+      bottom: -10px;
+      animation: width;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      border-radius: 5px;
+    }
+
+    @keyframes width {
+      0% {
+        width: 0%;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    #workFlow {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .heading {
+      margin: 1rem auto;
+      text-align: center;
+    }
+
+    .para {
+      margin: 1rem auto;
+    }
+
+    .num-container {
+      width: 70%;
+      margin: 1rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .num-item {
+      font-size: 1.5rem;
+      line-height: 1.4rem;
+      color: rgb(43, 126, 199);
+    }
+
+    /* Our Goal */
+    #goal {
+      width: 80%;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .goal-left {
+      width: 60%;
+      line-height: 2rem;
+    }
+
+    .goal-left h2 {
+      font-size: 2.4rem;
+    }
+
+    .goal-left p {
+      line-height: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .goal-left ul {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    .goal-left ul li::before {
+      line-height: 1.5rem;
+      content: '✓';
+      color: red;
+    }
+
+    .goal-right {
+      position: relative;
+      width: 35%;
+    }
+
+    .goal-right img {
+      width: 100%;
+      cursor: pointer;
+      border-radius: 10px;
+      filter: drop-shadow(3px 4px 5px black);
+      transition: all 0.2s linear;
+    }
+
+    .goal-right img:hover {
+      transform: translateY(-5px);
+      filter: drop-shadow(5px 6px 7px black);
+    }
+
+    .footer {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+  <section id="home">
+    <div class="home-left">
+      <img src="https://c8.alamy.com/comp/MP6D1D/medicine-concept-lifestyle-diseases-on-red-brick-wall-MP6D1D.jpg"
+        alt="life" width="400px">
+    </div>
+    <div class="home-right">
+      <br><br><br>
+      <h2 class="home-heading">About US</h2>
+      <p class="home-para">Lifestyle diseases are common among the population today not only in India but also in almost
+        every country. Lifestyle diseases are caused because of the habits that we have on a day to day basis. The way
+        one lives his life is the major cause of it. It includes heart disease, hypertension, chronic kidney disease and
+        liver disease, etc., which all may hear of. In our life also, one also comes across at least one person who is
+        either suffering from such diseases or the diseases became the reason for his death. We also came across many
+        such people who died because they were not aware of their disease and were left with no appropriate time for
+        treatment. That is why we decided to develop the portal which will analyse the data entered by the user and will
+        give the predictions of the diseases. which he or she may have chances to suffer from. In this project, we
+        developed an application for Chronic Kidney Disease, Cardio Vascular Disease and Liver Disease prediction using
+        Machine Learning. This project makes the person aware of his health so that he will have the treatment well in
+        time if required and will save the lives of many people. In this, we used a different machine learning models to
+        find prediction of disease like CKD, Heart disease & liver disease & demonstrated with the help of Web
+        application.
+        Lifestyle diseases include atherosclerosis, heart disease, and stroke; obesity and type 2 diabetes; and diseases
+        associated with smoking and alcohol and drug abuse.
+      </p>
+    </div>
+  </section>
+  <!--================== Home Section Ends Here -->
+
+  <!--================== Workflow Section Starts from Here ==================-->
+  <section id="workFlow">
+    <h2 class="heading"> Aim and Objectives</h2>
+    <h2 class="heading"> Aim </h2>
+    <p class="para">The primary aim is to develop predictive models that can assess the risk of lifestyle diseases in
+      individuals based on various parameters such as diet,<br> exercise habits, medical history, genetics, and
+      environmental factors.</p>
+  </section>
+  <!--================== Workflow Section Ends Here -->
+
+
+  <!--================== Goal Section Starts from Here ==================-->
+  <section id="goal">
+    <div class="goal-left">
+      <h2>Objectives</h2>
+      <p>The objectives of lifestyle disease prediction using machine learning typically revolve around leveraging
+        advanced computational techniques to anticipate the likelihood of an individual developing certain health
+        conditions based on their lifestyle choices and other relevant factors. Here's a breakdown:</p>
+      <ul>
+        <li> Early Detection: Detect lifestyle diseases at an early stage when they are more manageable.
+        </li>
+        <li> Personalized Risk Assessment: Provide personalized risk assessments to individuals.
+        </li>
+        <li> Preventive Interventions: Implement preventive interventions and lifestyle modifications tailored.</li>
+        <li> Data Analysis and Selection: Analyze large datasets containing information on lifestyle habits.</li>
+      </ul>
+    </div>
+    <div class="goal-right">
+      <img src="https://wallpapercave.com/wp/wp2968506.jpg" alt="wall">
+    </div>
+  </section>
+  <div class="footer">
+    <footer>
+      <p> &copy; 2024 - All rights reserved - LSDPUML</p>
+     
+    </footer>
+  </div>
+</body>
+
+</html>
