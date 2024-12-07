@@ -37,3 +37,7 @@ SQLAlchemy==2.0.28
 threadpoolctl==3.3.0
 typing_extensions==4.10.0
 Werkzeug==3.0.1
+
+#to clone this project
+git clone https://github.com/yourusername/lifestyle-disease-prediction.git
+cd lifestyle-disease-prediction
